@@ -12,7 +12,7 @@
 		085FCF62249E459C00ABCE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 085FCF61249E459C00ABCE97 /* Assets.xcassets */; };
 		085FCF65249E459C00ABCE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085FCF63249E459C00ABCE97 /* LaunchScreen.storyboard */; };
 		08E6FF6A249F4EFE00B74395 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF69249F4EFE00B74395 /* SecondViewController.swift */; };
-		08E6FF6C249F52E900B74395 /* HelloWorldGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF6B249F52E900B74395 /* HelloWorldGenerator.swift */; };
+		08E6FF6C249F52E900B74395 /* StrGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF6B249F52E900B74395 /* StrGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		085FCF64249E459C00ABCE97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		085FCF66249E459C00ABCE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E6FF69249F4EFE00B74395 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		08E6FF6B249F52E900B74395 /* HelloWorldGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldGenerator.swift; sourceTree = "<group>"; };
+		08E6FF6B249F52E900B74395 /* StrGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				085FCF58249E459B00ABCE97 /* AppDelegate.swift */,
 				085FCF5C249E459B00ABCE97 /* FirstViewController.swift */,
 				08E6FF69249F4EFE00B74395 /* SecondViewController.swift */,
-				08E6FF6B249F52E900B74395 /* HelloWorldGenerator.swift */,
+				08E6FF6B249F52E900B74395 /* StrGenerator.swift */,
 				085FCF61249E459C00ABCE97 /* Assets.xcassets */,
 				085FCF63249E459C00ABCE97 /* LaunchScreen.storyboard */,
 				085FCF66249E459C00ABCE97 /* Info.plist */,
@@ -139,7 +139,7 @@
 			files = (
 				08E6FF6A249F4EFE00B74395 /* SecondViewController.swift in Sources */,
 				085FCF5D249E459B00ABCE97 /* FirstViewController.swift in Sources */,
-				08E6FF6C249F52E900B74395 /* HelloWorldGenerator.swift in Sources */,
+				08E6FF6C249F52E900B74395 /* StrGenerator.swift in Sources */,
 				085FCF59249E459B00ABCE97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
