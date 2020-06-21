@@ -1,5 +1,5 @@
 //
-//  MyString.swift
+//  HelloGenerator.swift
 //  DependencyInjection
 //
 //  Created by Jaedoo Ko on 2020/06/21.
