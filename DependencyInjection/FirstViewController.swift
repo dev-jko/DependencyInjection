@@ -10,8 +10,10 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    //  화면에 보여줄 텍스트를 생성해줍니다
     private let generator: HelloWorldGenerator = HelloWorldGenerator()
     
+    //  생성된 텍스트를 화면에 띄워줍니다
     private let label: UILabel = {
         let lb = UILabel()
         lb.textColor = .blue
@@ -23,6 +25,7 @@ class FirstViewController: UIViewController {
         return lb
     }()
 
+    //  세컨드 뷰 컨트롤러로 연결할 버튼입니다
     private let btn: UIButton = {
         let btn = UIButton()
         btn.setTitle("go to second", for: .normal)

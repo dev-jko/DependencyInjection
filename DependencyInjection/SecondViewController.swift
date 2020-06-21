@@ -10,8 +10,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    //  화면에 보여줄 텍스트를 생성해줍니다
     private let generator: HelloWorldGenerator = HelloWorldGenerator()
     
+    //  생성된 텍스트를 화면에 띄워줍니다
     private let label: UILabel = {
         let lb = UILabel()
         lb.textColor = .blue

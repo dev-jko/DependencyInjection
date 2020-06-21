@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         
+        //  퍼스트 뷰 컨트롤러를 루트 뷰 컨트롤러로 지정하고 화면에 띄워줍니다
         window = UIWindow()
         window?.makeKeyAndVisible()
         window?.rootViewController = FirstViewController()
