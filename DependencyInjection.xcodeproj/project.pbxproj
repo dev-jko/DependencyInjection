@@ -13,6 +13,7 @@
 		085FCF65249E459C00ABCE97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 085FCF63249E459C00ABCE97 /* LaunchScreen.storyboard */; };
 		08E6FF6A249F4EFE00B74395 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF69249F4EFE00B74395 /* SecondViewController.swift */; };
 		08E6FF6C249F52E900B74395 /* StrGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF6B249F52E900B74395 /* StrGenerator.swift */; };
+		08E6FF6E249F9B9C00B74395 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6FF6D249F9B9C00B74395 /* AppDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		085FCF66249E459C00ABCE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08E6FF69249F4EFE00B74395 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		08E6FF6B249F52E900B74395 /* StrGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrGenerator.swift; sourceTree = "<group>"; };
+		08E6FF6D249F9B9C00B74395 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		085FCF57249E459B00ABCE97 /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				08E6FF6D249F9B9C00B74395 /* AppDependency.swift */,
 				085FCF58249E459B00ABCE97 /* AppDelegate.swift */,
 				085FCF5C249E459B00ABCE97 /* FirstViewController.swift */,
 				08E6FF69249F4EFE00B74395 /* SecondViewController.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E6FF6E249F9B9C00B74395 /* AppDependency.swift in Sources */,
 				08E6FF6A249F4EFE00B74395 /* SecondViewController.swift in Sources */,
 				085FCF5D249E459B00ABCE97 /* FirstViewController.swift in Sources */,
 				08E6FF6C249F52E900B74395 /* StrGenerator.swift in Sources */,

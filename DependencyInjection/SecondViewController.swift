@@ -10,9 +10,6 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    //  화면에 보여줄 텍스트를 생성해줍니다
-//    private let generator: HelloWorldGenerator = HelloWorldGenerator()
-
     //  헬로월드 제네레이터 대신 스트링 제네레이터로 바꿔줍니다
     private let generator: StrGenerator
     

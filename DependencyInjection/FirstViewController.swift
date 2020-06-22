@@ -10,11 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    //  화면에 보여줄 텍스트를 생성해줍니다
-//    private let generator: HelloWorldGenerator = HelloWorldGenerator()
-    
     //  헬로월드 제네레이터 대신 스트링 제네레이터로 바꿔줍니다
     private let generator: StrGenerator
+    private let secondViewControllerDependency: SecondViewController.Dependency
     
     //  생성된 텍스트를 화면에 띄워줍니다
     private let label: UILabel = {
@@ -41,8 +39,9 @@ class FirstViewController: UIViewController {
     }()
     
     //  생성자 주입
-    init(strGenerator: StrGenerator) {
+    init(strGenerator: StrGenerator, secondViewControllerDependency: SecondViewController.Dependency) {
         self.generator = strGenerator
+        self.secondViewControllerDependency = secondViewControllerDependency
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -81,8 +80,8 @@ class FirstViewController: UIViewController {
     @objc
     private func btnClicked(_ sender: UIButton) {
         //  세컨드 뷰 컨트롤러를 생성하고 화면에 띄워줍니다
-        let generator: StrGenerator = HelloWorldGenerator()
-        let vc = SecondViewController(strGenerator: generator)
+        let secondGenerator = secondViewControllerDependency.generator()
+        let vc = SecondViewController(strGenerator: secondGenerator)
         present(vc, animated: true, completion: nil)
     }
 
