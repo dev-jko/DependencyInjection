@@ -12,6 +12,8 @@ class FirstViewController: UIViewController {
     
     //  헬로월드 제네레이터 대신 스트링 제네레이터로 바꿔줍니다
     private let generator: StrGenerator
+    
+    //  세컨드 뷰컨의 의존성입니다
     private let secondViewControllerDependency: SecondViewController.Dependency
     
     //  생성된 텍스트를 화면에 띄워줍니다
@@ -80,6 +82,7 @@ class FirstViewController: UIViewController {
     @objc
     private func btnClicked(_ sender: UIButton) {
         //  세컨드 뷰 컨트롤러를 생성하고 화면에 띄워줍니다
+        //  세컨드 뷰컨의 의존성을 가지고 있기 때문에 생성자 주입을 해줄 수 있습니다
         let secondGenerator = secondViewControllerDependency.generator()
         let vc = SecondViewController(strGenerator: secondGenerator)
         present(vc, animated: true, completion: nil)

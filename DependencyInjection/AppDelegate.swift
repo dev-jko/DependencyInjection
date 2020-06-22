@@ -12,7 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let appDependency: AppDependency = AppDependency.resolve()
+    
+    //  앱 델리게이트의 의존성을 받습니다
+    let appDependency: AppDependency = .resolve()
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
@@ -22,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        //  퍼스트 뷰컨에 의존성 주입을 해주기 위해 앱 델리게이트에도 의존성이 생겨버렸습니다???
+        //  앱 디펜던시에 있는 퍼스트 뷰컨의 의존성을 받아서 생성자 주입을 해줍니다
+        //  secondViewControllerDependency는 세컨드 뷰컨의 의존성을 받기 위해 만들어준 프로퍼티에요
         let firstDependency = appDependency.firstViewControllerDependency
         window?.rootViewController = FirstViewController(
             strGenerator: firstDependency.generator(),
